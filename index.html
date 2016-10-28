@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--head.META-->
+    I'm Roberto, a gasoline and diesel mechanic and car enthusiast
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1">
+    <meta name="description" content="I'm Roberto, a gasoline and diesel mechanic and car enthusiast">
+    <meta name="keywords" content="I'm Roberto, a gasoline and diesel mechanic and car enthusiast">
+    <meta name="author" content="Roberto Ramos">
+    <meta property="og:title" content="Roberto Ramos"/>
+    <meta property="og:image" content="https://scontent-dft4-2.xx.fbcdn.net/t31.0-8/331155_117739858342404_990305934_o.jpg"/>
+    <meta property="og:url" content="http://www.robertoramos.net"/>
+    <meta property="og:description" content="I'm Roberto, a gasoline and diesel mechanic and car enthusiast."/>
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="https://www.robertoramos.net">
+    <meta name="twitter:title" content="Roberto Ramos">
+    <meta name="twitter:description" content="I'm Roberto, a gasoline and diesel mechanic and car enthusiast.">
+    <meta name="twitter:image" content="https://scontent-dft4-2.xx.fbcdn.net/t31.0-8/331155_117739858342404_990305934_o.jpg">
+    <link rel="publisher" href="https://www.robertoramos.net"/>
+    
+<!--head.CSS-->
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/grayscale.css" rel="stylesheet" type="text/css">
+<!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+<!-- Custom Fonts for GRAYSCALE themex -->
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="shortcut icon" href="favicon.ico" type="img/x-icon">
+<!-- TITLE -->
+    <title>Roberto Ramos</title>
+<!-- Loading jQuery.JS -->
+    <script src="js/jquery.js"></script>
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+ <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <span class="light">
+                        Roberto
+                    </span> Ramos
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                     <li>
+                        <a class="page-scroll" href="cv.html">Curriculum Vitae</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+       
+<!-- Intro HEADER -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row" style="margin-top:5%;">
+                    <div class="col-lg-6 col-sm-5">
+                        <img src="img/rb.png" style="height:600px; padding-left:30px;">
+                    </div>
+                    <div class="col-lg-6 col-sm-7">
+                        <div class="introBox">
+                            <p class="introDets">
+                                <span style="font-size:1.5em;color:gray"> <strong>Hi!</strong></span> I'm Roberto, a gasoline and diesel mechanic &amp; car enthusiast. 
+                            </p>
+                            <br/>
+                            <p class="introDets">
+                                <strong>Specialties:</strong> Diesel, Gasoline, Fuel Injection, Electrical Systems
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+<!-- Footer Section -->
+    <footer id="footer">
+        <div class="intro-body center">
+            <h6><a href="cv.html">Curriculum Vitae</a></h6>
+            <br/>
+            <h6>
+                &copy; 2016 <a href="index.html">Roberto Ramos</a>. All Rights Reserved.
+            </h6>
+        </div>
+      </footer>
+<!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.js"></script>
+<!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+<!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+
+
+    <script type="text/javascript">
+        $(window).load(function(){
+            
+            $('.main-nav li a').bind('click',function(event){
+                var $anchor = $(this);
+                
+                $('html, body').stop().animate({
+                    scrollTop: $($anchor.attr('href')).offset().top - 102
+                }, 1500,'easeInOutExpo');
+                /*
+                if you don't want to use the easing effects:
+                $('html, body').stop().animate({
+                    scrollTop: $($anchor.attr('href')).offset().top
+                }, 1000);
+                */
+                event.preventDefault();
+            });
+        })
+    </script>  
+<!-- HEY -->
+    <script type="text/javascript">
+        console.log("Hello!")
+    </script>
+</body>
+</html>
